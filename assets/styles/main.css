@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+
+html {
+  @apply font-body antialiased;
+}
+
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
