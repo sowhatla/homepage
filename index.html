@@ -18,7 +18,7 @@
 
   <link
     rel="canonical"
-    href="//"
+    href="https://www.sowhat.la/"
   />
 
   <meta
@@ -87,7 +87,7 @@
   <body
     :class="{ 'overflow-hidden max-h-screen': mobileMenu }"
     class="relative bg-bgColor"
-    x-data="{ mobileMenu: false }"
+    x-data="{ mobileMenu: false, formVisible:false }"
   >
     
     <div id="main" class="relative">
@@ -315,7 +315,7 @@
 </div>
 
 
-<div class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48 min-h-screen flex flex-col justify-center  id="quote">
+<div class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48 min-h-screen flex flex-col justify-center" id="quote">
   <div class = "">
     <div class = "flex flex-col justify-center items-center ">
      
@@ -331,22 +331,51 @@
 
 <div class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48 min-h-screen flex flex-col justify-center md:justify-end" id="CONTACT">
   <div class = "flex flex-row  justify-center md:justify-end ">
-    <div class = "flex-col justify-center md:justify-end md:basis-1/2 px-8">
+    <div class = "flex-col justify-center md:justify-end lg:basis-1/2 px-8">
      
      <div>
       <img src ="assets/img/GETINTOUCH.svg"/>
     </div>
     <div class="flex justify-center items-center py-8">
-      <button class="bg-[#c6cbf9] text-[#ba6b32] text-xl font-bold py-6 px-10 rounded-full hover:bg-[#aab1f5]">
+      <button class="bg-[#c6cbf9] text-[#ba6b32] text-xl font-bold py-6 px-10 rounded-full hover:bg-[#aab1f5]" @click="formVisible = !formVisible">
         say what's up
     </button>
+   </div>
+   <div>
+    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md" x-show="formVisible"
+    x-transition:enter="transition ease-in duration-200 transform"
+    x-transition:enter-start="opacity-0 scale-75"
+    x-transition:enter-end="opacity-100 scale-100"
+    x-transition:leave="transition ease-in duration-200 transform"
+    x-transition:leave-start="opacity-100 scale-100"
+    x-transition:leave-end="opacity-0 scale-75">
+      <!-- <h2 class="mb-4 text-4xl tracking-tight font-body  text-center text-primary">Contact Us</h2>
+      <p class="mb-8 lg:mb-16  font-body text-center  text-primary  sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p> -->
+      <form action="https://formspree.io/f/mdkkpwok" method="POST" class="space-y-8" >
+          <div>
+              <label for="email" class="block mb-2 text-sm font-body font-medium  text-primary dark:text-gray-300">Your email</label>
+              <input type="email" name ="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300  text-black text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+          </div>
+          <div>
+              <label for="subject" class="block mb-2 text-sm font-body font-medium  text-primary dark:text-gray-300">Subject</label>
+              <input type="text" name="subject" id="subject" class="block p-3 w-full text-sm  text-black bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+          </div>
+          <div class="sm:col-span-2">
+              <label for="message" class="block mb-2 text-sm font-body font-medium  text-primary dark:text-gray-400">Your message</label>
+              <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-sm  text-black bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+          </div>
+          <div class="flex justify-center">
+          <button type="submit" class="bg-[#c6cbf9] text-[#ba6b32] text-xl font-bold py-6 px-10 rounded-full hover:bg-[#aab1f5]">Send message</button>
+        </div>
+      </form>
+  </div>
    </div>
     </div>
 
 
   </div>
   <!-- EMAIL FORM -->
-
+</div>
 
 
 </div>
