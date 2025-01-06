@@ -7,3 +7,7 @@ html {
 
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.container {
+  background-color: inherit; /* Ensure child elements inherit the body background */
+}
