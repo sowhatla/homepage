@@ -1677,7 +1677,7 @@ html {
 
 .bg-bgColor {
   --tw-bg-opacity: 1;
-  background-color: rgb(85 45 50 );
+  background-color: rgb(85 45 50 / var(--tw-bg-opacity, 1));
 }
 
 .bg-black {
@@ -2002,93 +2002,72 @@ html {
           transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
-.container {
-  background-color: inherit; /* Ensure child elements inherit the body background */
-}
-
 .hover\:bg-\[\#aab1f5\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(170 177 245 / var(--tw-bg-opacity, 1));
 }
-
 .hover\:bg-grey-20:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(124 124 124 / var(--tw-bg-opacity, 1));
 }
-
 .hover\:text-yellow:hover {
   --tw-text-opacity: 1;
   color: rgb(249 231 28 / var(--tw-text-opacity, 1));
 }
-
 .focus\:border-black:focus {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
-
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
-
 .focus\:bg-white:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
-
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-
 .focus\:ring:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   -webkit-box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
           box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
-
 .focus\:ring-0:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   -webkit-box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
           box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
-
 .focus\:ring-1:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   -webkit-box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
           box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
-
 .focus\:ring-black:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(0 0 0 / var(--tw-ring-opacity, 1));
 }
-
 .focus\:ring-opacity-50:focus {
   --tw-ring-opacity: 0.5;
 }
-
 .focus\:ring-offset-0:focus {
   --tw-ring-offset-width: 0px;
 }
-
 .focus\:ring-offset-2:focus {
   --tw-ring-offset-width: 2px;
 }
-
 .group:hover .group-hover\:bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(254 190 152 / var(--tw-bg-opacity, 1));
 }
-
 .group:hover .group-hover\:bg-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(249 231 28 / var(--tw-bg-opacity, 1));
 }
-
 @media (min-width: 640px) {
 
   .sm\:col-span-2 {
@@ -2147,7 +2126,6 @@ html {
     line-height: 2.25rem;
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:ml-10 {
@@ -2247,7 +2225,6 @@ html {
     line-height: 2.25rem;
   }
 }
-
 @media (min-width: 1024px) {
 
   .lg\:mb-16 {
@@ -2304,7 +2281,6 @@ html {
     line-height: 2.25rem;
   }
 }
-
 @media (min-width: 1280px) {
 
   .xl\:w-1\/5 {
@@ -2324,3 +2300,5 @@ html {
     line-height: 2.25rem;
   }
 }
+
+
