@@ -1830,6 +1830,10 @@ html {
   padding-top: 1rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2192,6 +2196,10 @@ html {
 
   .md\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .md\:pt-4 {
+    padding-top: 1rem;
   }
 
   .md\:text-left {
